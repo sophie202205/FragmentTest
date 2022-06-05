@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.container, f1);
         transaction.commit();
     }
+
+    public F1Fragment getF1(){
+        return f1;
+    }
     public void setF2(View view) {
         FragmentTransaction transaction = fmgr.beginTransaction();
         transaction.replace(R.id.container, f2);
